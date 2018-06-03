@@ -1,0 +1,52 @@
+<section *ngIf="superHero">
+  <section>
+    <h3>SuperHero is : {{superHero.name}}</h3>
+    <h4>Further Details: </h4>
+    <ol>
+      <li>
+        <label>Name :</label> {{superHero.name}} 
+      </li>
+      <li>
+        <label>Weight :</label> {{superHero.weight}} 
+      </li>
+      <li>
+        <label>Height :</label> {{superHero.height}} 
+      </li>
+      <li>
+        <label>Hair Color :</label> {{superHero.hair_color}} 
+      </li>
+      <li>
+        <label>Skin Color :</label> {{superHero.skin_color}} 
+      </li>
+      <li>
+        <label>Eye Color :</label> {{superHero.eye_color}} 
+      </li>
+      <li>
+        <label>Birth Year :</label> {{superHero.birth_year}} 
+      </li>
+      <li>
+        <label>Gender :</label> {{superHero.gender}} 
+      </li>
+    </ol>
+  </section>
+  <button  class="push_button blue" (click)="backToHome()">Go To Mainpage</button>
+</section>
+<section *ngIf="isLoading && !errorMessage">
+        <div class="sk-fading-circle">
+          <div class="sk-circle1 sk-circle"></div>
+          <div class="sk-circle2 sk-circle"></div>
+          <div class="sk-circle3 sk-circle"></div>
+          <div class="sk-circle4 sk-circle"></div>
+          <div class="sk-circle5 sk-circle"></div>
+          <div class="sk-circle6 sk-circle"></div>
+          <div class="sk-circle7 sk-circle"></div>
+          <div class="sk-circle8 sk-circle"></div>
+          <div class="sk-circle9 sk-circle"></div>
+          <div class="sk-circle10 sk-circle"></div>
+          <div class="sk-circle11 sk-circle"></div>
+          <div class="sk-circle12 sk-circle"></div>
+        </div>
+      </section>
+      <section *ngIf="errorMessage">
+        {{errorMessage}}
+      </section>

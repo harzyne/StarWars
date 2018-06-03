@@ -1,0 +1,12 @@
+// h1 { color:orange; font-family: 'Trocchi', serif; font-size: 30px; font-weight: normal; line-height: 48px; margin: 0; }
+// h2 { color: cadetblue; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px; }
+.bg {
+    background: url("./img/starwars-background.jpg") no-repeat;
+    display: block;
+    position: relative;
+    width: auto;
+    height: 0;
+  padding-bottom: 20%;
+    background-size: 100%;
+}
+
